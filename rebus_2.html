@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  
+  <head>
+  <meta name="Rebus" content="You cant figure out the answer form the code. MUHAHA!! Go back and try again.">
+    <title>rebus</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  </head>
+  
+  <body>
+   <center>
+     <h1 class="">Welcome Player! Figure out this riddle and your reward will be a free ticket to the Gamification workshop</h1>
+      <p>Type in your guessed answer then push "Submit". You can try as many times as you want. The solution is 1 word. It is NOT case sensitive.</p>
+      <img src="http://i.imgur.com/TtmknZZ.jpg" alt="rebuspic">
+    </center>
+    
+    <script>
+   function validateForm()
+{
+var x=document.forms["myForm"]["rebus"].value;
+if (x=="teacher")
+  {
+  alert("Yeay! You got it!");
+  }
+  else
+  {
+  alert("Nope, not that one. Try again!");
+  }
+}
+   </script>
+   
+<center>
+<form name="myForm" action="demo_form.asp" onsubmit="return validateForm();" method="post">
+Guess your answer: <input type="text" name="rebus">
+<input type="submit" value="Submit">
+</form>
+
+
+<p>For going back to the Gamification subscription page:</p> <a href="info.iterate.no/gamification">Click here</a>
+
+    </center>
+  </body>
+</html>
