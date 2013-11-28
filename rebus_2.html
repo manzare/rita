@@ -18,14 +18,19 @@
    function validateForm()
 {
 var x=document.forms["myForm"]["rebus"].value;
-if (x=="teacher")
-  {
-  alert("Yeay! You got it!");
-  }
-  else
-  {
-  alert("Nope, not that one. Try again!");
-  }
+        if (x=="teacher" || x=="TEACHER" || x=="Teacher")
+        {
+        alert("Yeay! You got it!");
+        }
+        else
+        if (x==null || x=="")
+        {
+        alert("Please write something in the bracket.");
+        }
+        else
+        {
+        alert("Nope, not that one. Try again!");
+        }
 }
    </script>
    
